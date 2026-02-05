@@ -1,8 +1,7 @@
 from typing import *
+import types
 
-__all__ = ["main"]
+__all__ = ["funcjunx"]
 
-
-def main(args: Optional[Iterable] = None) -> None:
-    "This function prints 'Hello World!'."
-    print("Hello World!")
+def funcjunx(*args:Callable) -> types.FunctionType:
+    raise NotImplementedError
